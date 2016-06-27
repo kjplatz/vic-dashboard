@@ -222,7 +222,7 @@ func graphBugs(w http.ResponseWriter, r *http.Request ) {
     } else {
         for cb < len(closedBugs) {
             ob--
-            point = XY{ closedBugs[ab].X, float64(ob) }
+            point = XY{ closedBugs[cb].X, float64(ob) }
             openBugs = append( openBugs, point )
             cb++
         }
